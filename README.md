@@ -7,6 +7,50 @@
 
 Modern UI components library for Laravel applications. UmbraUI provides a collection of beautiful, customizable components that help you build elegant user interfaces quickly and efficiently.
 
+## Components Status
+
+| Component | Status |
+|-----------|--------|
+| **Form Components** |  |
+| Button | ⏳ Planned |
+| Input | ⏳ Planned |
+| Textarea | ⏳ Planned |
+| Select | ⏳ Planned |
+| Checkbox | ⏳ Planned |
+| Radio | ⏳ Planned |
+| File Upload | ⏳ Planned |
+| **Layout Components** |  |
+| Container | ⏳ Planned |
+| Grid | ⏳ Planned |
+| Card | ⏳ Planned |
+| Modal | ⏳ Planned |
+| Sidebar | ⏳ Planned |
+| **Navigation Components** |  |
+| Navbar | ⏳ Planned |
+| Breadcrumb | ⏳ Planned |
+| Pagination | ⏳ Planned |
+| Tabs | ⏳ Planned |
+| **Feedback Components** |  |
+| Alert | ⏳ Planned |
+| Toast | ⏳ Planned |
+| Progress Bar | ⏳ Planned |
+| Spinner | ⏳ Planned |
+| **Data Display Components** |  |
+| Table | ⏳ Planned |
+| List | ⏳ Planned |
+| Badge | ⏳ Planned |
+| Avatar | ⏳ Planned |
+| **Utility Components** |  |
+| Dropdown | ⏳ Planned |
+| Tooltip | ⏳ Planned |
+| Popover | ⏳ Planned |
+| Accordion | ⏳ Planned |
+
+**Status Legend:**
+- ❌ Not Available
+- ⏳ Planned
+- ✅ Ready
+
 
 ## Installation
 
