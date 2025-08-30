@@ -24,9 +24,15 @@ _ide_helper_models.php
 /.fleet
 /.vscode
 
+# Workbench (development only - not needed by end users)
+/workbench/
+/testbench.yaml
+
+# Development tools
+configure.php
+
 # Misc
 phpunit.xml
 phpstan.neon
-testbench.yaml
 /docs
 /coverage

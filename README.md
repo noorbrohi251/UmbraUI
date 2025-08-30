@@ -5,52 +5,54 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/ihxnnxs/UmbraUI/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/ihxnnxs/UmbraUI/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/ihxnnxs/umbra-ui.svg?style=flat-square)](https://packagist.org/packages/ihxnnxs/umbra-ui)
 
-Modern UI components library for Laravel applications. UmbraUI provides a collection of beautiful, customizable components that help you build elegant user interfaces quickly and efficiently.
+Modern UI components library for Laravel applications. UmbraUI provides a collection of beautiful, customizable
+components that help you build elegant user interfaces quickly and efficiently.
 
 ## Components Status
 
-| Component | Status |
-|-----------|--------|
-| **Form Components** |  |
-| Button | ⏳ Planned |
-| Input | ⏳ Planned |
-| Textarea | ⏳ Planned |
-| Select | ⏳ Planned |
-| Checkbox | ⏳ Planned |
-| Radio | ⏳ Planned |
-| File Upload | ⏳ Planned |
-| **Layout Components** |  |
-| Container | ⏳ Planned |
-| Grid | ⏳ Planned |
-| Card | ⏳ Planned |
-| Modal | ⏳ Planned |
-| Sidebar | ⏳ Planned |
-| **Navigation Components** |  |
-| Navbar | ⏳ Planned |
-| Breadcrumb | ⏳ Planned |
-| Pagination | ⏳ Planned |
-| Tabs | ⏳ Planned |
-| **Feedback Components** |  |
-| Alert | ⏳ Planned |
-| Toast | ⏳ Planned |
-| Progress Bar | ⏳ Planned |
-| Spinner | ⏳ Planned |
-| **Data Display Components** |  |
-| Table | ⏳ Planned |
-| List | ⏳ Planned |
-| Badge | ⏳ Planned |
-| Avatar | ⏳ Planned |
-| **Utility Components** |  |
-| Dropdown | ⏳ Planned |
-| Tooltip | ⏳ Planned |
-| Popover | ⏳ Planned |
-| Accordion | ⏳ Planned |
+| Component                   | Status        |
+|-----------------------------|---------------|
+| **Form Components**         |               |
+| Button                      | 🔨 Developing |
+| Input                       | 🔨 Developing |
+| Textarea                    | 🔨 Developing |
+| Select                      | 🔨 Developing |
+| Checkbox                    | 🔨 Developing |
+| Radio                       | 🔨 Developing |
+| File Upload                 | ⏳ Planned     |
+| **Layout Components**       |               |
+| Container                   | ⏳ Planned     |
+| Grid                        | ⏳ Planned     |
+| Card                        | ⏳ Planned     |
+| Modal                       | ⏳ Planned     |
+| Sidebar                     | ⏳ Planned     |
+| **Navigation Components**   |               |
+| Navbar                      | ⏳ Planned     |
+| Breadcrumb                  | ⏳ Planned     |
+| Pagination                  | ⏳ Planned     |
+| Tabs                        | ⏳ Planned     |
+| **Feedback Components**     |               |
+| Alert                       | ⏳ Planned     |
+| Toast                       | ⏳ Planned     |
+| Progress Bar                | ⏳ Planned     |
+| Spinner                     | ⏳ Planned     |
+| **Data Display Components** |               |
+| Table                       | ⏳ Planned     |
+| List                        | ⏳ Planned     |
+| Badge                       | ⏳ Planned     |
+| Avatar                      | ⏳ Planned     |
+| **Utility Components**      |               |
+| Dropdown                    | ⏳ Planned     |
+| Tooltip                     | ⏳ Planned     |
+| Popover                     | ⏳ Planned     |
+| Accordion                   | ⏳ Planned     |
 
 **Status Legend:**
+
 - ❌ Not Available
 - ⏳ Planned
+- 🔨 Developing
 - ✅ Ready
-
 
 ## Installation
 
@@ -75,10 +77,10 @@ php artisan vendor:publish --tag="umbra-ui-views"
 ## Usage
 
 ```php
-use Ihxnnxs\UmbraUI\Facades\UmbraUI;
-
 // Use UmbraUI components in your Blade templates
-@umbraui('button', ['variant' => 'primary', 'text' => 'Click me'])
+<x-umbra-ui::button>Click me</x-umbra-ui::button>
+<x-umbra-ui::button variant="secondary" size="lg">Large Button</x-umbra-ui::button>
+<x-umbra-ui::button variant="outline" :disabled="true">Disabled</x-umbra-ui::button>
 ```
 
 ## Testing
