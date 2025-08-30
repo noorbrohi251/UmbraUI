@@ -53,7 +53,30 @@
         </div>
     </div>
 
-</div>
+    <!-- Accordion -->
+    <div class="w-full max-w-md space-y-4">
+        <x-accordion>
+            <x-slot name="title">Первый аккордион</x-slot>
+            Это содержимое первого аккордиона. Здесь может быть любой контент - текст, изображения, формы и т.д.
+        </x-accordion>
 
+        <x-accordion>
+            <x-slot name="title">Второй аккордион</x-slot>
+            Содержимое второго аккордиона с <strong>форматированным текстом</strong> и другими элементами.
+        </x-accordion>
+
+        <x-accordion>
+            <x-slot name="title">Третий аккордион</x-slot>
+            <p>Третий аккордион может содержать:</p>
+            <ul class="list-disc list-inside mt-2 space-y-1">
+                <li>Списки</li>
+                <li>Параграфы</li>
+                <li>Любой другой HTML контент</li>
+            </ul>
+        </x-accordion>
+    </div>
+
+    <!-- Modal -->
+</div>
 </body>
 </html>

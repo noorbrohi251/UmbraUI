@@ -19,13 +19,32 @@ components that help you build elegant user interfaces quickly and efficiently.
 | Select                      | 🔨 Developing |
 | Checkbox                    | 🔨 Developing |
 | Radio                       | 🔨 Developing |
+| Label                       | 🔨 Developing |
+| Form Group/Field            | ⏳ Planned     |
+| Switch/Toggle               | ⏳ Planned     |
+| Range/Slider                | ⏳ Planned     |
+| Date Picker                 | ⏳ Planned     |
+| Search Input                | ⏳ Planned     |
 | File Upload                 | ⏳ Planned     |
 | **Layout Components**       |               |
 | Container                   | ⏳ Planned     |
 | Grid                        | ⏳ Planned     |
+| Stack/VStack/HStack         | ⏳ Planned     |
+| Box                         | ⏳ Planned     |
+| Spacer                      | ⏳ Planned     |
+| Divider/Separator           | ⏳ Planned     |
+| Center                      | ⏳ Planned     |
 | Card                        | ⏳ Planned     |
 | Modal                       | ⏳ Planned     |
 | Sidebar                     | ⏳ Planned     |
+| **Typography Components**   |               |
+| Heading                     | ⏳ Planned     |
+| Text/Paragraph              | ⏳ Planned     |
+| Link                        | ⏳ Planned     |
+| Code                        | ⏳ Planned     |
+| **Icon Components**         |               |
+| Icon                        | ⏳ Planned     |
+| Icon Button                 | ⏳ Planned     |
 | **Navigation Components**   |               |
 | Navbar                      | ⏳ Planned     |
 | Breadcrumb                  | ⏳ Planned     |
@@ -36,6 +55,8 @@ components that help you build elegant user interfaces quickly and efficiently.
 | Toast                       | ⏳ Planned     |
 | Progress Bar                | ⏳ Planned     |
 | Spinner                     | ⏳ Planned     |
+| Skeleton                    | ⏳ Planned     |
+| Empty State                 | ⏳ Planned     |
 | **Data Display Components** |               |
 | Table                       | ⏳ Planned     |
 | List                        | ⏳ Planned     |
@@ -45,7 +66,10 @@ components that help you build elegant user interfaces quickly and efficiently.
 | Dropdown                    | ⏳ Planned     |
 | Tooltip                     | ⏳ Planned     |
 | Popover                     | ⏳ Planned     |
-| Accordion                   | ⏳ Planned     |
+| Accordion                   | 🔨 Developing |
+| Portal                      | ⏳ Planned     |
+| Backdrop/Overlay            | ⏳ Planned     |
+| Drawer                      | ⏳ Planned     |
 
 **Status Legend:**
 
