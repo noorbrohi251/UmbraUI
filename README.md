@@ -5,86 +5,57 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/ihxnnxs/UmbraUI/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/ihxnnxs/UmbraUI/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/ihxnnxs/umbra-ui.svg?style=flat-square)](https://packagist.org/packages/ihxnnxs/umbra-ui)
 
-Modern UI components library for Laravel applications with Tailwind CSS
+**Essential UI components library for Laravel applications with Tailwind CSS**
 
 <p align="center">
   <img src="previewLight.png" alt="UmbraUI Light Theme" width="250">
   <img src="previewDark.png" alt="UmbraUI Dark Theme" width="250">
 </p>
 
-UmbraUI provides a collection of beautiful, customizable components that help you build elegant user interfaces quickly
-and efficiently. Features dark/light themes, and accessibility-first design.
+UmbraUI focuses on providing the most essential UI components for modern web applications. Built with accessibility-first design, dark/light theme support, and seamless Laravel integration.
 
-## Components Status
+## Essential Components
 
-| Component                   | Status        |
-|-----------------------------|---------------|
-| **Form Components**         |               |
-| Button                      | 🔨 Developing |
-| Input                       | 🔨 Developing |
-| Link                        | 🔨 Developing |
-| Textarea                    | 🔨 Developing |
-| Select                      | 🔨 Developing |
-| Checkbox                    | 🔨 Developing |
-| Radio                       | 🔨 Developing |
-| Label                       | 🔨 Developing |
-| Form Group/Field            | 🔨 Developing |
-| Switch/Toggle               | 🔨 Developing |
-| Range/Slider                | 🔨 Developing |
-| Date Picker                 | 🔨 Developing |
-| Search Input                | 🔨 Developing |
-| File Upload                 | ⏳ Planned     |
-| **Layout Components**       |               |
-| Container                   | ⏳ Planned     |
-| Grid                        | ⏳ Planned     |
-| Stack/VStack/HStack         | ⏳ Planned     |
-| Box                         | ⏳ Planned     |
-| Spacer                      | ⏳ Planned     |
-| Divider/Separator           | ⏳ Planned     |
-| Center                      | ⏳ Planned     |
-| Card                        | ⏳ Planned     |
-| Modal                       | 🔨 Developing |
-| Sidebar                     | ⏳ Planned     |
-| **Typography Components**   |               |
-| Heading                     | ⏳ Planned     |
-| Text/Paragraph              | ⏳ Planned     |
-| Link                        | ⏳ Planned     |
-| Code                        | ⏳ Planned     |
-| **Icon Components**         |               |
-| Icon                        | ⏳ Planned     |
-| Icon Button                 | ⏳ Planned     |
-| **Navigation Components**   |               |
-| Navbar                      | ⏳ Planned     |
-| Breadcrumb                  | ⏳ Planned     |
-| Pagination                  | ⏳ Planned     |
-| Tabs                        | 🔨 Developing |
-| **Feedback Components**     |               |
-| Alert                       | ⏳ Planned     |
-| Toast                       | ⏳ Planned     |
-| Progress Bar                | ⏳ Planned     |
-| Spinner                     | ⏳ Planned     |
-| Skeleton                    | ⏳ Planned     |
-| Empty State                 | ⏳ Planned     |
-| **Data Display Components** |               |
-| Table                       | ⏳ Planned     |
-| List                        | ⏳ Planned     |
-| Badge                       | ⏳ Planned     |
-| Avatar                      | ⏳ Planned     |
-| **Utility Components**      |               |
-| Dropdown                    | ⏳ Planned     |
-| Tooltip                     | ⏳ Planned     |
-| Popover                     | ⏳ Planned     |
-| Accordion                   | 🔨 Developing |
-| Portal                      | ⏳ Planned     |
-| Backdrop/Overlay            | ⏳ Planned     |
-| Drawer                      | ⏳ Planned     |
+UmbraUI focuses on the most critical components for modern web applications, based on industry standards and popular libraries like shadcn/ui, Tailwind UI, and Chakra UI.
 
-**Status Legend:**
+### Core Form Components 🔨
+| Component | Status | Description |
+|-----------|--------|-------------|
+| Button | 🔨 Developing | Primary, secondary, and variant styles |
+| Input | 🔨 Developing | Text, email, password, number inputs |
+| Link | 🔨 Developing | Styled anchor elements |
+| Textarea | 🔨 Developing | Multi-line text input |
+| Select | 🔨 Developing | Dropdown selection |
+| Checkbox | 🔨 Developing | Boolean selection |
+| Radio | 🔨 Developing | Single choice selection |
+| Label | 🔨 Developing | Form field labels |
+| Field | 🔨 Developing | Form field wrapper with validation |
+| Switch | 🔨 Developing | Toggle switch |
+| Slider | 🔨 Developing | Range input |
+| Date Picker | 🔨 Developing | Date selection |
 
-- ❌ Not Available
-- ⏳ Planned
-- 🔨 Developing
-- ✅ Ready
+### Navigation & Layout 🔨
+| Component | Status | Description |
+|-----------|--------|-------------|
+| Tabs | 🔨 Developing | Tabbed navigation interface |
+| Accordion | 🔨 Developing | Collapsible content sections |
+| Modal | 🔨 Developing | Dialog/popup overlay |
+
+### Coming Next 🚀
+| Component | Status | Priority |
+|-----------|--------|----------|
+| Alert | 🔨 Developing | High |
+| Badge | 🔨 Developing | High |
+| Card | 🔨 Developing | High |
+| Avatar | ⏳ Planned | Medium |
+| Dropdown | ⏳ Planned | Medium |
+| Toast | ⏳ Planned | Medium |
+
+**Why These Components?**
+- **High Usage**: Based on analysis of popular UI libraries and real-world applications
+- **Essential Patterns**: Covers 80% of common UI needs
+- **Accessibility First**: All components built with ARIA compliance
+- **Framework Agnostic**: Works with any Laravel project
 
 ## Installation
 
@@ -108,11 +79,74 @@ php artisan vendor:publish --tag="umbra-ui-views"
 
 ## Usage
 
-```php
-// Use UmbraUI components in your Blade templates
-<x-umbra-ui::button>Click me</x-umbra-ui::button>
-<x-umbra-ui::button variant="secondary" size="lg">Large Button</x-umbra-ui::button>
-<x-umbra-ui::button variant="outline" :disabled="true">Disabled</x-umbra-ui::button>
+### Basic Components
+
+```blade
+{{-- Buttons --}}
+<x-button>Primary Button</x-button>
+<x-button type="submit" class="bg-blue-600">Custom Button</x-button>
+
+{{-- Form Inputs --}}
+<x-input type="email" placeholder="Enter email" />
+<x-textarea placeholder="Your message..." />
+<x-select>
+    <option>Choose...</option>
+    <option value="1">Option 1</option>
+</x-select>
+
+{{-- Form Controls --}}
+<x-checkbox id="terms" />
+<x-label for="terms">Accept Terms</x-label>
+
+<x-radio name="choice" value="a" id="choice-a" />
+<x-label for="choice-a">Choice A</x-label>
+
+<x-switch id="notifications" />
+```
+
+### Advanced Components
+
+```blade
+{{-- Form Fields with Validation --}}
+<x-field label="Email Address" error="Email is required">
+    <x-input type="email" />
+</x-field>
+
+<x-field label="Message" helper="Maximum 500 characters">
+    <x-textarea />
+</x-field>
+
+{{-- Navigation --}}
+<x-tabs default-tab="overview">
+    <x-tabs.nav>
+        <x-tabs.tab value="overview">Overview</x-tabs.tab>
+        <x-tabs.tab value="settings">Settings</x-tabs.tab>
+    </x-tabs.nav>
+    
+    <x-tabs.panel value="overview">
+        <p>Overview content...</p>
+    </x-tabs.panel>
+    
+    <x-tabs.panel value="settings">
+        <p>Settings content...</p>
+    </x-tabs.panel>
+</x-tabs>
+
+{{-- Interactive Components --}}
+<x-accordion>
+    <x-slot name="title">FAQ Item</x-slot>
+    Answer content goes here...
+</x-accordion>
+
+<x-slider min="0" max="100" value="50" />
+<x-date-picker value="2025-01-15" />
+```
+
+### Links
+
+```blade
+<x-link href="https://example.com">External Link</x-link>
+<x-link href="/dashboard" class="text-blue-600">Custom Styled Link</x-link>
 ```
 
 ## Testing
