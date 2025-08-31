@@ -1,3 +1,3 @@
-<select {{ $attributes }} class="px-4 py-2 border-2 border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-600 focus:ring-offset-2 focus:border-transparent transition-all duration-200 max-w-md w-full appearance-none bg-neutral-50 dark:bg-neutral-950 dark:border-neutral-800 dark:text-neutral-50 dark:focus:ring-neutral-300 dark:focus:border-neutral-300">
+<select {{ $attributes->merge(['class' => 'px-3 py-2 border-2 border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-600 focus:ring-offset-1 focus:border-transparent transition-all duration-200 w-full appearance-none bg-white disabled:opacity-50 disabled:cursor-not-allowed dark:bg-neutral-950 dark:border-neutral-700 dark:text-neutral-50 dark:focus:ring-neutral-400 dark:focus:border-neutral-400']) }}>
     {{ $slot }}
 </select>

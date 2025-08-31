@@ -1,5 +1,5 @@
 @if($clickable ?? true)
-<label {{ $attributes }} class="text-neutral-900 dark:text-neutral-50 cursor-pointer">{{ $slot }}</label>
+<label {{ $attributes->merge(['class' => 'text-neutral-900 dark:text-neutral-50 cursor-pointer']) }}>{{ $slot }}</label>
 @else
-<span {{ $attributes }} class="text-neutral-900 dark:text-neutral-50">{{ $slot }}</span>
+<span {{ $attributes->merge(['class' => 'text-neutral-900 dark:text-neutral-50']) }}>{{ $slot }}</span>
 @endif

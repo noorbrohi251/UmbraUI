@@ -1,1 +1,1 @@
-<input type="range" {{ $attributes }} class="w-full accent-neutral-900 dark:accent-neutral-50" />
+<input {{ $attributes->merge(['type' => 'range', 'class' => 'w-full h-2 bg-neutral-200 rounded-lg appearance-none cursor-pointer accent-neutral-900 disabled:opacity-50 disabled:cursor-not-allowed dark:bg-neutral-700 dark:accent-neutral-50']) }} />

@@ -1,4 +1,4 @@
-<div {{ $attributes }} class="space-y-2 max-w-md w-full">
+<div {{ $attributes->merge(['class' => 'space-y-2 w-full']) }}>
     @if(isset($label))
     <x-label>{{ $label }}</x-label>
     @endif

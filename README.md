@@ -40,13 +40,13 @@ UmbraUI focuses on the most critical components for modern web applications, bas
 | Tabs | 🔨 Developing | Tabbed navigation interface |
 | Accordion | 🔨 Developing | Collapsible content sections |
 | Modal | 🔨 Developing | Dialog/popup overlay |
+| Card | 🔨 Developing | Universal card with image support |
 
 ### Coming Next 🚀
 | Component | Status | Priority |
 |-----------|--------|----------|
 | Alert | 🔨 Developing | High |
 | Badge | 🔨 Developing | High |
-| Card | 🔨 Developing | High |
 | Avatar | ⏳ Planned | Medium |
 | Dropdown | ⏳ Planned | Medium |
 | Toast | ⏳ Planned | Medium |
@@ -140,6 +140,33 @@ php artisan vendor:publish --tag="umbra-ui-views"
 
 <x-slider min="0" max="100" value="50" />
 <x-date-picker value="2025-01-15" />
+```
+
+### Cards
+
+```blade
+{{-- Simple Card --}}
+<x-card>
+    <h4>Card Title</h4>
+    <p>Card content goes here...</p>
+</x-card>
+
+{{-- Card with Image --}}
+<x-card>
+    <x-slot name="image">
+        <img src="image.jpg" alt="Description" class="w-full h-48 object-cover" />
+    </x-slot>
+    
+    <x-slot name="header">
+        <h4>Card with Image</h4>
+    </x-slot>
+    
+    <p>Content with image and header.</p>
+    
+    <x-slot name="footer">
+        <x-button>Action</x-button>
+    </x-slot>
+</x-card>
 ```
 
 ### Links
