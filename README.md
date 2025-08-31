@@ -95,25 +95,25 @@ php artisan vendor:publish --tag="card"
 
 ```blade
 {{-- Buttons --}}
-<x-button>Primary Button</x-button>
-<x-button type="submit" class="bg-blue-600">Custom Button</x-button>
+<x-umbra-ui::button>Primary Button</x-umbra-ui::button>
+<x-umbra-ui::button type="submit" class="bg-blue-600">Custom Button</x-umbra-ui::button>
 
 {{-- Form Inputs --}}
-<x-input type="email" placeholder="Enter email" />
-<x-textarea placeholder="Your message..." />
-<x-select>
+<x-umbra-ui::input type="email" placeholder="Enter email" />
+<x-umbra-ui::textarea placeholder="Your message..." />
+<x-umbra-ui::select>
     <option>Choose...</option>
     <option value="1">Option 1</option>
-</x-select>
+</x-umbra-ui::select>
 
 {{-- Form Controls --}}
-<x-checkbox id="terms" />
-<x-label for="terms">Accept Terms</x-label>
+<x-umbra-ui::checkbox id="terms" />
+<x-umbra-ui::label for="terms">Accept Terms</x-umbra-ui::label>
 
-<x-radio name="choice" value="a" id="choice-a" />
-<x-label for="choice-a">Choice A</x-label>
+<x-umbra-ui::radio name="choice" value="a" id="choice-a" />
+<x-umbra-ui::label for="choice-a">Choice A</x-umbra-ui::label>
 
-<x-switch id="notifications" />
+<x-umbra-ui::switch id="notifications" />
 ```
 
 ### Advanced Components
