@@ -1,57 +1,69 @@
-# UmbraUI
+  <p align="center">
+  <img src="images/logo/LightLogo.png" alt="UmbraUI Light Theme" width="50">
+</p>
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/ihxnnxs/umbra-ui.svg?style=flat-square)](https://packagist.org/packages/ihxnnxs/umbra-ui)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/ihxnnxs/UmbraUI/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/ihxnnxs/UmbraUI/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/ihxnnxs/UmbraUI/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/ihxnnxs/UmbraUI/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/ihxnnxs/umbra-ui.svg?style=flat-square)](https://packagist.org/packages/ihxnnxs/umbra-ui)
+<h1 align="center">UmbraUI</h1>
+
+<p align="center">
+  <a href="https://packagist.org/packages/ihxnnxs/umbra-ui"><img src="https://img.shields.io/packagist/v/ihxnnxs/umbra-ui.svg?style=flat-square" alt="Latest Version on Packagist"></a>
+  <a href="https://github.com/ihxnnxs/UmbraUI/actions?query=workflow%3Arun-tests+branch%3Amain"><img src="https://img.shields.io/github/actions/workflow/status/ihxnnxs/UmbraUI/run-tests.yml?branch=main&label=tests&style=flat-square" alt="GitHub Tests Action Status"></a>
+  <a href="https://github.com/ihxnnxs/UmbraUI/actions?query=workflow%3A%22Fix+PHP+code+style+issues%22+branch%3Amain"><img src="https://img.shields.io/github/actions/workflow/status/ihxnnxs/UmbraUI/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square" alt="GitHub Code Style Action Status"></a>
+  <a href="https://packagist.org/packages/ihxnnxs/umbra-ui"><img src="https://img.shields.io/packagist/dt/ihxnnxs/umbra-ui.svg?style=flat-square" alt="Total Downloads"></a>
+</p>
 
 **Essential UI components library for Laravel applications with Tailwind CSS**
 
 <p align="center">
-  <img src="previewLight.png" alt="UmbraUI Light Theme" width="250">
-  <img src="previewDark.png" alt="UmbraUI Dark Theme" width="250">
+  <img src="images/preview/previewLight.png" alt="UmbraUI Light Theme" width="250">
+  <img src="images/preview/previewDark.png" alt="UmbraUI Dark Theme" width="250">
 </p>
 
-UmbraUI focuses on providing the most essential UI components for modern web applications. Built with accessibility-first design, dark/light theme support, and seamless Laravel integration.
+UmbraUI focuses on providing the most essential UI components for modern web applications. Built with
+accessibility-first design, dark/light theme support, and seamless Laravel integration.
 
 ## Essential Components
 
-UmbraUI focuses on the most critical components for modern web applications, based on industry standards and popular libraries like shadcn/ui, Tailwind UI, and Chakra UI.
+UmbraUI focuses on the most critical components for modern web applications, based on industry standards and popular
+libraries like shadcn/ui, Tailwind UI, and Chakra UI.
 
 ### Core Form Components 🔨
-| Component | Status | Description |
-|-----------|--------|-------------|
-| Button | 🔨 Developing | Primary, secondary, and variant styles |
-| Input | 🔨 Developing | Text, email, password, number inputs |
-| Link | 🔨 Developing | Styled anchor elements |
-| Textarea | 🔨 Developing | Multi-line text input |
-| Select | 🔨 Developing | Dropdown selection |
-| Checkbox | 🔨 Developing | Boolean selection |
-| Radio | 🔨 Developing | Single choice selection |
-| Label | 🔨 Developing | Form field labels |
-| Field | 🔨 Developing | Form field wrapper with validation |
-| Switch | 🔨 Developing | Toggle switch |
-| Slider | 🔨 Developing | Range input |
-| Date Picker | 🔨 Developing | Date selection |
+
+| Component   | Status        | Description                            |
+|-------------|---------------|----------------------------------------|
+| Button      | 🔨 Developing | Primary, secondary, and variant styles |
+| Input       | 🔨 Developing | Text, email, password, number inputs   |
+| Link        | 🔨 Developing | Styled anchor elements                 |
+| Textarea    | 🔨 Developing | Multi-line text input                  |
+| Select      | 🔨 Developing | Dropdown selection                     |
+| Checkbox    | 🔨 Developing | Boolean selection                      |
+| Radio       | 🔨 Developing | Single choice selection                |
+| Label       | 🔨 Developing | Form field labels                      |
+| Field       | 🔨 Developing | Form field wrapper with validation     |
+| Switch      | 🔨 Developing | Toggle switch                          |
+| Slider      | 🔨 Developing | Range input                            |
+| Date Picker | 🔨 Developing | Date selection                         |
 
 ### Navigation & Layout 🔨
-| Component | Status | Description |
-|-----------|--------|-------------|
-| Tabs | 🔨 Developing | Tabbed navigation interface |
-| Accordion | 🔨 Developing | Collapsible content sections |
-| Modal | 🔨 Developing | Dialog/popup overlay |
-| Card | 🔨 Developing | Universal card with image support |
+
+| Component | Status        | Description                       |
+|-----------|---------------|-----------------------------------|
+| Tabs      | 🔨 Developing | Tabbed navigation interface       |
+| Accordion | 🔨 Developing | Collapsible content sections      |
+| Modal     | 🔨 Developing | Dialog/popup overlay              |
+| Card      | 🔨 Developing | Universal card with image support |
 
 ### Coming Next 🚀
-| Component | Status | Priority |
-|-----------|--------|----------|
-| Alert | 🔨 Developing | High |
-| Badge | 🔨 Developing | High |
-| Avatar | ⏳ Planned | Medium |
-| Dropdown | ⏳ Planned | Medium |
-| Toast | ⏳ Planned | Medium |
+
+| Component | Status        | Priority |
+|-----------|---------------|----------|
+| Alert     | 🔨 Developing | High     |
+| Badge     | 🔨 Developing | High     |
+| Avatar    | ⏳ Planned     | Medium   |
+| Dropdown  | ⏳ Planned     | Medium   |
+| Toast     | ⏳ Planned     | Medium   |
 
 **Why These Components?**
+
 - **High Usage**: Based on analysis of popular UI libraries and real-world applications
 - **Essential Patterns**: Covers 80% of common UI needs
 - **Accessibility First**: All components built with ARIA compliance
