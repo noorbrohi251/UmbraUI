@@ -24,7 +24,7 @@ components that help you build elegant user interfaces quickly and efficiently.
 | Switch/Toggle               | ⏳ Planned     |
 | Range/Slider                | ⏳ Planned     |
 | Date Picker                 | ⏳ Planned     |
-| Search Input                | ⏳ Planned     |
+| Search Input                | 🔨 Developing |
 | File Upload                 | ⏳ Planned     |
 | **Layout Components**       |               |
 | Container                   | ⏳ Planned     |

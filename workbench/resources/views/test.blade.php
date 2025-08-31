@@ -11,8 +11,14 @@
     <!-- Button -->
     <x-button>Button Works!</x-button>
 
-    <!-- Input -->
-    <x-input name="name" placeholder="write your text here"/>
+    <!-- Inputs -->
+    <x-input type="text" name="text" placeholder="Text input"/>
+    <x-input type="email" name="email" placeholder="Email input"/>
+    <x-input type="password" name="password" placeholder="Password input"/>
+    <x-input type="search" name="search" placeholder="Search input"/>
+    <x-input type="tel" name="tel" placeholder="Phone input"/>
+    <x-input type="url" name="url" placeholder="URL input"/>
+    <x-input type="number" name="number" placeholder="Number input"/>
     <!-- Textarea -->
     <x-textarea></x-textarea>
 
