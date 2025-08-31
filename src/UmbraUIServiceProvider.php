@@ -44,9 +44,10 @@ class UmbraUIServiceProvider extends ServiceProvider
         $globalEnabled = config('umbra-ui.register_global', false);
         $enabledComponents = config('umbra-ui.enabled_components', []);
 
-        if (!$globalEnabled || empty($enabledComponents)) {
+        if (! $globalEnabled || empty($enabledComponents)) {
             // Register ALL components with prefix if global is disabled OR no components specified
             Blade::anonymousComponentPath(__DIR__.'/../resources/views/components', 'umbra-ui');
+
             return;
         }
 
@@ -60,7 +61,7 @@ class UmbraUIServiceProvider extends ServiceProvider
     {
         $componentPath = __DIR__."/../resources/views/components/{$component}";
 
-        if (!File::isDirectory($componentPath)) {
+        if (! File::isDirectory($componentPath)) {
             return;
         }
 
@@ -81,7 +82,7 @@ class UmbraUIServiceProvider extends ServiceProvider
 
     protected function registerGlobalComponents(): void
     {
-        if (!config('umbra-ui.register_global', false)) {
+        if (! config('umbra-ui.register_global', false)) {
             return;
         }
 
@@ -102,7 +103,7 @@ class UmbraUIServiceProvider extends ServiceProvider
     {
         $componentPath = __DIR__."/../resources/views/components/{$component}";
 
-        if (!File::isDirectory($componentPath)) {
+        if (! File::isDirectory($componentPath)) {
             return;
         }
 
@@ -125,7 +126,7 @@ class UmbraUIServiceProvider extends ServiceProvider
     {
         $componentsPath = __DIR__.'/../resources/views/components';
         $components = collect(File::directories($componentsPath))
-            ->map(fn($path) => basename($path))
+            ->map(fn ($path) => basename($path))
             ->toArray();
 
         foreach ($components as $component) {
