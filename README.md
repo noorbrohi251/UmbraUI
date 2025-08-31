@@ -26,41 +26,41 @@ accessibility-first design, dark/light theme support, and seamless Laravel integ
 UmbraUI focuses on the most critical components for modern web applications, based on industry standards and popular
 libraries like shadcn/ui, Tailwind UI, and Chakra UI.
 
-### Core Form Components 🔨
+### Core Form Components ✅
 
-| Component   | Status        | Description                            |
-|-------------|---------------|----------------------------------------|
-| Button      | 🔨 Developing | Primary, secondary, and variant styles |
-| Input       | 🔨 Developing | Text, email, password, number inputs   |
-| Link        | 🔨 Developing | Styled anchor elements                 |
-| Textarea    | 🔨 Developing | Multi-line text input                  |
-| Select      | 🔨 Developing | Dropdown selection                     |
-| Checkbox    | 🔨 Developing | Boolean selection                      |
-| Radio       | 🔨 Developing | Single choice selection                |
-| Label       | 🔨 Developing | Form field labels                      |
-| Field       | 🔨 Developing | Form field wrapper with validation     |
-| Switch      | 🔨 Developing | Toggle switch                          |
-| Slider      | 🔨 Developing | Range input                            |
-| Date Picker | 🔨 Developing | Date selection                         |
+| Component   | Status | Description                            |
+|-------------|--------|----------------------------------------|
+| Button      | ✅ Ready | Primary, secondary, and variant styles |
+| Input       | ✅ Ready | Text, email, password, number inputs   |
+| Link        | ✅ Ready | Styled anchor elements                 |
+| Textarea    | ✅ Ready | Multi-line text input                  |
+| Select      | ✅ Ready | Dropdown selection                     |
+| Checkbox    | ✅ Ready | Boolean selection                      |
+| Radio       | ✅ Ready | Single choice selection                |
+| Label       | ✅ Ready | Form field labels                      |
+| Field       | ✅ Ready | Form field wrapper with validation     |
+| Switch      | ✅ Ready | Toggle switch                          |
+| Slider      | ✅ Ready | Range input                            |
+| Date Picker | ✅ Ready | Date selection                         |
 
-### Navigation & Layout 🔨
+### Navigation & Layout ✅
 
-| Component | Status        | Description                       |
-|-----------|---------------|-----------------------------------|
-| Tabs      | 🔨 Developing | Tabbed navigation interface       |
-| Accordion | 🔨 Developing | Collapsible content sections      |
-| Modal     | 🔨 Developing | Dialog/popup overlay              |
-| Card      | 🔨 Developing | Universal card with image support |
+| Component | Status | Description                       |
+|-----------|--------|-----------------------------------|
+| Alert     | ✅ Ready | Success, error, warning, info     |
+| Tabs      | ✅ Ready | Tabbed navigation interface       |
+| Accordion | ✅ Ready | Collapsible content sections      |
+| Modal     | ✅ Ready | Dialog/popup overlay              |
+| Card      | ✅ Ready | Universal card with image support |
 
 ### Coming Next 🚀
 
-| Component | Status        | Priority |
-|-----------|---------------|----------|
-| Alert     | 🔨 Developing | High     |
-| Badge     | 🔨 Developing | High     |
-| Avatar    | ⏳ Planned     | Medium   |
-| Dropdown  | ⏳ Planned     | Medium   |
-| Toast     | ⏳ Planned     | Medium   |
+| Component | Status      | Priority |
+|-----------|-------------|----------|
+| Badge     | ⏳ Planned   | High     |
+| Avatar    | ⏳ Planned   | Medium   |
+| Dropdown  | ⏳ Planned   | Medium   |
+| Toast     | ⏳ Planned   | Medium   |
 
 **Why These Components?**
 
@@ -77,16 +77,16 @@ You can install the package via composer:
 composer require ihxnnxs/umbra-ui
 ```
 
-You can publish the config file with:
+Optionally, you can publish individual components or all views:
 
 ```bash
-php artisan vendor:publish --tag="umbra-ui-config"
-```
-
-Optionally, you can publish the views using
-
-```bash
+# Publish all views
 php artisan vendor:publish --tag="umbra-ui-views"
+
+# Publish individual components
+php artisan vendor:publish --tag="button"
+php artisan vendor:publish --tag="alert"
+php artisan vendor:publish --tag="card"
 ```
 
 ## Usage
