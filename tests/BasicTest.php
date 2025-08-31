@@ -4,7 +4,7 @@ use function Pest\Laravel\blade;
 
 test('link component renders correctly', function () {
     $component = blade('<x-umbra::link href="https://example.com">Test Link</x-umbra::link>');
-    
+
     expect($component)
         ->toContain('href="https://example.com"')
         ->toContain('Test Link')
@@ -15,7 +15,7 @@ test('link component renders correctly', function () {
 
 test('link component accepts custom attributes', function () {
     $component = blade('<x-umbra::link href="/home" class="custom-class" target="_blank">Home</x-umbra::link>');
-    
+
     expect($component)
         ->toContain('href="/home"')
         ->toContain('target="_blank"')
@@ -25,7 +25,7 @@ test('link component accepts custom attributes', function () {
 
 test('link component supports dark mode classes', function () {
     $component = blade('<x-umbra::link href="#">Dark Link</x-umbra::link>');
-    
+
     expect($component)
         ->toContain('dark:text-neutral-50')
         ->toContain('dark:hover:text-neutral-300');
