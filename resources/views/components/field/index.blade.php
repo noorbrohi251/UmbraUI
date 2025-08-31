@@ -1,6 +1,6 @@
-<div class="space-y-2 max-w-md w-full">
+<div {{ $attributes }} class="space-y-2 max-w-md w-full">
     @if(isset($label))
-    <x-label for="{{ $for ?? $name ?? '' }}">{{ $label }}</x-label>
+    <x-label>{{ $label }}</x-label>
     @endif
     
     {{ $slot }}

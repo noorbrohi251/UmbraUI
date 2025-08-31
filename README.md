@@ -22,6 +22,7 @@ and efficiently. Features dark/light themes, and accessibility-first design.
 | **Form Components**         |               |
 | Button                      | 🔨 Developing |
 | Input                       | 🔨 Developing |
+| Link                        | 🔨 Developing |
 | Textarea                    | 🔨 Developing |
 | Select                      | 🔨 Developing |
 | Checkbox                    | 🔨 Developing |
