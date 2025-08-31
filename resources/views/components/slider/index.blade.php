@@ -1,0 +1,1 @@
+<input type="range" {{ $attributes }} class="w-full accent-neutral-900 dark:accent-neutral-50" />

@@ -20,10 +20,10 @@ components that help you build elegant user interfaces quickly and efficiently.
 | Checkbox                    | 🔨 Developing |
 | Radio                       | 🔨 Developing |
 | Label                       | 🔨 Developing |
-| Form Group/Field            | ⏳ Planned     |
-| Switch/Toggle               | ⏳ Planned     |
-| Range/Slider                | ⏳ Planned     |
-| Date Picker                 | ⏳ Planned     |
+| Form Group/Field            | 🔨 Developing |
+| Switch/Toggle               | 🔨 Developing |
+| Range/Slider                | 🔨 Developing |
+| Date Picker                 | 🔨 Developing |
 | Search Input                | 🔨 Developing |
 | File Upload                 | ⏳ Planned     |
 | **Layout Components**       |               |
@@ -35,7 +35,7 @@ components that help you build elegant user interfaces quickly and efficiently.
 | Divider/Separator           | ⏳ Planned     |
 | Center                      | ⏳ Planned     |
 | Card                        | ⏳ Planned     |
-| Modal                       | ⏳ Planned     |
+| Modal                       | 🔨 Developing |
 | Sidebar                     | ⏳ Planned     |
 | **Typography Components**   |               |
 | Heading                     | ⏳ Planned     |

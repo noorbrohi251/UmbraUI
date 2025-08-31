@@ -1,1 +1,5 @@
-<label for="{{$for}}" class="text-neutral-700 cursor-pointer">{{$slot}}</label>
+@if($clickable ?? true)
+<label {{ $attributes }} class="text-neutral-900 dark:text-neutral-50 cursor-pointer">{{ $slot }}</label>
+@else
+<span {{ $attributes }} class="text-neutral-900 dark:text-neutral-50">{{ $slot }}</span>
+@endif

@@ -1,0 +1,4 @@
+<label class="relative inline-flex items-center cursor-pointer">
+    <input type="checkbox" {{ $attributes }} class="sr-only peer" />
+    <div class="relative w-11 h-6 bg-neutral-200 peer-focus:outline-none rounded-full peer dark:bg-neutral-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-neutral-900 dark:peer-checked:bg-neutral-200 dark:after:bg-neutral-900 dark:peer-checked:after:bg-neutral-900"></div>
+</label>

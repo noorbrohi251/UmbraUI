@@ -37,6 +37,38 @@
         </x-label>
     </div>
 
+    <!-- Switch -->
+    <div class="flex items-center space-x-2 max-w-md">
+        <x-switch id="switch1" name="switch1"/>
+        <x-label :clickable="false">
+            Switch Toggle
+        </x-label>
+    </div>
+
+    <!-- Slider -->
+    <div class="max-w-md w-full">
+        <x-slider min="0" max="100" value="50" name="slider1"/>
+    </div>
+
+    <!-- Date Picker -->
+    <x-date-picker name="date1" value="2025-01-15"/>
+
+    <!-- Form Fields -->
+    <x-field label="Email Address" name="email" error="This field is required">
+        <x-input type="email" name="email" placeholder="Enter your email"/>
+    </x-field>
+
+    <x-field label="Password" name="password" helper="Must be at least 8 characters">
+        <x-input type="password" name="password" placeholder="Enter password"/>
+    </x-field>
+
+    <x-field label="Newsletter">
+        <div class="flex items-center space-x-2">
+            <x-switch id="newsletter" name="newsletter"/>
+            <x-label :clickable="false">Subscribe to newsletter</x-label>
+        </div>
+    </x-field>
+
     <!-- Radio buttons -->
     <div class="space-y-2 max-w-md">
         <div class="flex items-center space-x-2">
@@ -81,8 +113,6 @@
             </ul>
         </x-accordion>
     </div>
-
-    <!-- Modal -->
 </div>
 </body>
 </html>
