@@ -23,7 +23,7 @@ class UmbraUIServiceProvider extends ServiceProvider
         // Always register components with prefix
         Blade::anonymousComponentPath(__DIR__.'/../resources/views/components', 'umbra-ui');
 
-        // Only register enabled components globally without prefix
+        // Register individual components globally if enabled
         $this->registerGlobalComponents();
 
         // Publish individual components
@@ -46,19 +46,38 @@ class UmbraUIServiceProvider extends ServiceProvider
         }
 
         $enabledComponents = config('umbra-ui.enabled_components', []);
-        $componentsPath = __DIR__.'/../resources/views/components';
-
+        
         if (empty($enabledComponents)) {
-            // If no specific components are enabled, register all
-            Blade::anonymousComponentPath($componentsPath);
+            // If no specific components are enabled, don't register any globally
+            // User must explicitly list components they want
             return;
         }
 
-        // Register only enabled components globally
+        // Register only enabled components individually
         foreach ($enabledComponents as $component) {
-            $componentPath = $componentsPath . '/' . $component;
-            if (File::isDirectory($componentPath)) {
-                Blade::anonymousComponentNamespace($componentPath, null);
+            $this->registerSingleComponent($component);
+        }
+    }
+
+    protected function registerSingleComponent(string $component): void
+    {
+        $componentPath = __DIR__."/../resources/views/components/{$component}";
+        
+        if (!File::isDirectory($componentPath)) {
+            return;
+        }
+
+        // Register the specific component globally
+        if (File::exists("{$componentPath}/index.blade.php")) {
+            Blade::component($component, "{$componentPath}/index.blade.php");
+        }
+        
+        // Handle nested components (like tabs.nav, tabs.panel)
+        $subComponents = File::glob("{$componentPath}/*.blade.php");
+        foreach ($subComponents as $subComponentPath) {
+            $subComponentName = pathinfo($subComponentPath, PATHINFO_FILENAME);
+            if ($subComponentName !== 'index') {
+                Blade::component("{$component}.{$subComponentName}", $subComponentPath);
             }
         }
     }
@@ -82,6 +101,10 @@ class UmbraUIServiceProvider extends ServiceProvider
             __DIR__.'/../resources/views/components/input' => resource_path('views/components/input'),
             __DIR__.'/../resources/views/components/textarea' => resource_path('views/components/textarea'),
             __DIR__.'/../resources/views/components/select' => resource_path('views/components/select'),
+            __DIR__.'/../resources/views/components/checkbox' => resource_path('views/components/checkbox'),
+            __DIR__.'/../resources/views/components/radio' => resource_path('views/components/radio'),
+            __DIR__.'/../resources/views/components/label' => resource_path('views/components/label'),
+            __DIR__.'/../resources/views/components/field' => resource_path('views/components/field'),
         ], 'umbra-ui-forms');
 
         $this->publishes([
@@ -94,5 +117,11 @@ class UmbraUIServiceProvider extends ServiceProvider
             __DIR__.'/../resources/views/components/tabs' => resource_path('views/components/tabs'),
             __DIR__.'/../resources/views/components/accordion' => resource_path('views/components/accordion'),
         ], 'umbra-ui-navigation');
+
+        $this->publishes([
+            __DIR__.'/../resources/views/components/switch' => resource_path('views/components/switch'),
+            __DIR__.'/../resources/views/components/slider' => resource_path('views/components/slider'),
+            __DIR__.'/../resources/views/components/date-picker' => resource_path('views/components/date-picker'),
+        ], 'umbra-ui-interactive');
     }
 }
