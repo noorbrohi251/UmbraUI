@@ -56,7 +56,7 @@ and efficiently. Features dark/light themes, and accessibility-first design.
 | Navbar                      | ⏳ Planned     |
 | Breadcrumb                  | ⏳ Planned     |
 | Pagination                  | ⏳ Planned     |
-| Tabs                        | ⏳ Planned     |
+| Tabs                        | 🔨 Developing |
 | **Feedback Components**     |               |
 | Alert                       | ⏳ Planned     |
 | Toast                       | ⏳ Planned     |
