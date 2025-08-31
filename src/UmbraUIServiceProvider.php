@@ -41,7 +41,7 @@ class UmbraUIServiceProvider extends ServiceProvider
 
     protected function registerGlobalComponents(): void
     {
-        if (!config('umbra-ui.register_global', false)) {
+        if (! config('umbra-ui.register_global', false)) {
             return;
         }
 
@@ -51,12 +51,13 @@ class UmbraUIServiceProvider extends ServiceProvider
         if (empty($enabledComponents)) {
             // If no specific components are enabled, register all
             Blade::anonymousComponentPath($componentsPath);
+
             return;
         }
 
         // Register only enabled components globally
         foreach ($enabledComponents as $component) {
-            $componentPath = $componentsPath . '/' . $component;
+            $componentPath = $componentsPath.'/'.$component;
             if (File::isDirectory($componentPath)) {
                 Blade::anonymousComponentNamespace($componentPath, null);
             }
@@ -67,7 +68,7 @@ class UmbraUIServiceProvider extends ServiceProvider
     {
         $componentsPath = __DIR__.'/../resources/views/components';
         $components = collect(File::directories($componentsPath))
-            ->map(fn($path) => basename($path))
+            ->map(fn ($path) => basename($path))
             ->toArray();
 
         foreach ($components as $component) {
