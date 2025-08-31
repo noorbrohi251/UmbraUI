@@ -23,8 +23,8 @@ return [
     | Leave empty to enable all components globally.
     | This allows you to selectively enable only the components you need.
     |
-    | Available components: 'alert', 'button', 'input', 'textarea', 'select', 
-    | 'checkbox', 'radio', 'label', 'link', 'field', 'card', 'modal', 'tabs', 
+    | Available components: 'alert', 'button', 'input', 'textarea', 'select',
+    | 'checkbox', 'radio', 'label', 'link', 'field', 'card', 'modal', 'tabs',
     | 'accordion', 'switch', 'slider', 'date-picker'
     |
     */
@@ -54,7 +54,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | These groups allow you to publish related components together:
-    | 
+    |
     | Forms: button, input, textarea, select, checkbox, radio, label, field
     | Layout: alert, card, modal
     | Navigation: tabs, accordion

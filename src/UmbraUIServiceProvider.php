@@ -46,7 +46,7 @@ class UmbraUIServiceProvider extends ServiceProvider
         }
 
         $enabledComponents = config('umbra-ui.enabled_components', []);
-        
+
         if (empty($enabledComponents)) {
             // If no specific components are enabled, don't register any globally
             // User must explicitly list components they want
@@ -62,7 +62,7 @@ class UmbraUIServiceProvider extends ServiceProvider
     protected function registerSingleComponent(string $component): void
     {
         $componentPath = __DIR__."/../resources/views/components/{$component}";
-        
+
         if (!File::isDirectory($componentPath)) {
             return;
         }
@@ -71,7 +71,7 @@ class UmbraUIServiceProvider extends ServiceProvider
         if (File::exists("{$componentPath}/index.blade.php")) {
             Blade::component($component, "{$componentPath}/index.blade.php");
         }
-        
+
         // Handle nested components (like tabs.nav, tabs.panel)
         $subComponents = File::glob("{$componentPath}/*.blade.php");
         foreach ($subComponents as $subComponentPath) {
