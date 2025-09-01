@@ -48,6 +48,8 @@ libraries like shadcn/ui, Tailwind UI, and Chakra UI.
 | Component | Status  | Description                       |
 |-----------|---------|-----------------------------------|
 | Alert     | ✅ Ready | Success, error, warning, info     |
+| Badge     | ✅ Ready | Status indicators and labels      |
+| Avatar    | ✅ Ready | User profile pictures and initials|
 | Tabs      | ✅ Ready | Tabbed navigation interface       |
 | Accordion | ✅ Ready | Collapsible content sections      |
 | Modal     | ✅ Ready | Dialog/popup overlay              |
@@ -58,8 +60,6 @@ libraries like shadcn/ui, Tailwind UI, and Chakra UI.
 | Component | Status         | Priority |
 |-----------|----------------|----------|
 | Toast     | 🚧 Developing  | High     |
-| Badge     | ⏳ Planned     | High     |
-| Avatar    | ⏳ Planned     | Medium   |
 | Dropdown  | ⏳ Planned     | Medium   |
 
 **Why These Components?**
@@ -143,6 +143,19 @@ php artisan vendor:publish --tag="card"
         <p>Settings content...</p>
     </x-tabs.panel>
 </x-tabs>
+
+{{-- Badges --}}
+<x-umbra-ui::badge>Default</x-umbra-ui::badge>
+<x-umbra-ui::badge variant="success">Success</x-umbra-ui::badge>
+<x-umbra-ui::badge variant="error" removable="true">Removable</x-umbra-ui::badge>
+<x-umbra-ui::badge variant="primary" dot="true">With Dot</x-umbra-ui::badge>
+<x-umbra-ui::badge size="lg">Large Badge</x-umbra-ui::badge>
+
+{{-- Avatars --}}
+<x-umbra-ui::avatar src="/path/to/image.jpg" alt="User Name" />
+<x-umbra-ui::avatar initials="JD" size="lg" />
+<x-umbra-ui::avatar status="online" size="md" />
+<x-umbra-ui::avatar shape="square" initials="AB" />
 
 {{-- Interactive Components --}}
 <x-accordion>
