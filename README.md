@@ -45,21 +45,21 @@ libraries like shadcn/ui, Tailwind UI, and Chakra UI.
 
 ### Navigation & Layout ✅
 
-| Component | Status  | Description                       |
-|-----------|---------|-----------------------------------|
-| Alert     | ✅ Ready | Success, error, warning, info     |
-| Badge     | ✅ Ready | Status indicators and labels      |
-| Avatar    | ✅ Ready | User profile pictures and initials|
-| Tabs      | ✅ Ready | Tabbed navigation interface       |
-| Accordion | ✅ Ready | Collapsible content sections      |
-| Modal     | ✅ Ready | Dialog/popup overlay              |
-| Card      | ✅ Ready | Universal card with image support |
+| Component | Status  | Description                        |
+|-----------|---------|------------------------------------|
+| Alert     | ✅ Ready | Success, error, warning, info      |
+| Badge     | ✅ Ready | Status indicators and labels       |
+| Avatar    | ✅ Ready | User profile pictures and initials |
+| Tabs      | ✅ Ready | Tabbed navigation interface        |
+| Accordion | ✅ Ready | Collapsible content sections       |
+| Modal     | ✅ Ready | Dialog/popup overlay               |
+| Card      | ✅ Ready | Universal card with image support  |
 
 ### Coming Next 🚀
 
-| Component | Status         | Priority |
-|-----------|----------------|----------|
-| Toast     | 🚧 Developing  | High     |
+| Component | Status        | Priority |
+|-----------|---------------|----------|
+| Toast     | 🚧 Developing | High     |
 | Dropdown  | ⏳ Planned     | Medium   |
 
 **Why These Components?**
@@ -75,18 +75,6 @@ You can install the package via composer:
 
 ```bash
 composer require ihxnnxs/umbra-ui
-```
-
-Optionally, you can publish individual components or all views:
-
-```bash
-# Publish all views
-php artisan vendor:publish --tag="umbra-ui-views"
-
-# Publish individual components
-php artisan vendor:publish --tag="button"
-php artisan vendor:publish --tag="alert"
-php artisan vendor:publish --tag="card"
 ```
 
 ## Usage
