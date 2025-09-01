@@ -28,8 +28,8 @@ libraries like shadcn/ui, Tailwind UI, and Chakra UI.
 
 ### Core Form Components ✅
 
-| Component   | Status | Description                            |
-|-------------|--------|----------------------------------------|
+| Component   | Status  | Description                            |
+|-------------|---------|----------------------------------------|
 | Button      | ✅ Ready | Primary, secondary, and variant styles |
 | Input       | ✅ Ready | Text, email, password, number inputs   |
 | Link        | ✅ Ready | Styled anchor elements                 |
@@ -45,8 +45,8 @@ libraries like shadcn/ui, Tailwind UI, and Chakra UI.
 
 ### Navigation & Layout ✅
 
-| Component | Status | Description                       |
-|-----------|--------|-----------------------------------|
+| Component | Status  | Description                       |
+|-----------|---------|-----------------------------------|
 | Alert     | ✅ Ready | Success, error, warning, info     |
 | Tabs      | ✅ Ready | Tabbed navigation interface       |
 | Accordion | ✅ Ready | Collapsible content sections      |
@@ -55,12 +55,12 @@ libraries like shadcn/ui, Tailwind UI, and Chakra UI.
 
 ### Coming Next 🚀
 
-| Component | Status      | Priority |
-|-----------|-------------|----------|
-| Badge     | ⏳ Planned   | High     |
-| Avatar    | ⏳ Planned   | Medium   |
-| Dropdown  | ⏳ Planned   | Medium   |
-| Toast     | ⏳ Planned   | Medium   |
+| Component | Status         | Priority |
+|-----------|----------------|----------|
+| Toast     | 🚧 Developing  | High     |
+| Badge     | ⏳ Planned     | High     |
+| Avatar    | ⏳ Planned     | Medium   |
+| Dropdown  | ⏳ Planned     | Medium   |
 
 **Why These Components?**
 

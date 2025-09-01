@@ -3,28 +3,28 @@ $type = $attributes->get('type', 'info');
 
 $variants = [
     'success' => [
-        'wrapper' => 'bg-green-50 border-green-200 dark:bg-green-950/20 dark:border-green-800',
-        'icon' => 'text-green-500 dark:text-green-400',
-        'title' => 'text-green-800 dark:text-green-200',
-        'content' => 'text-green-700 dark:text-green-300'
+        'wrapper' => 'bg-white dark:bg-neutral-950 border-2 border-neutral-200 dark:border-neutral-800 shadow-sm dark:shadow-neutral-900/10 border-l-4 border-l-emerald-500',
+        'icon' => 'text-emerald-500 dark:text-emerald-400',
+        'title' => 'text-neutral-900 dark:text-neutral-50',
+        'content' => 'text-neutral-600 dark:text-neutral-300'
     ],
     'error' => [
-        'wrapper' => 'bg-red-50 border-red-200 dark:bg-red-950/20 dark:border-red-800',
+        'wrapper' => 'bg-white dark:bg-neutral-950 border-2 border-neutral-200 dark:border-neutral-800 shadow-sm dark:shadow-neutral-900/10 border-l-4 border-l-red-500',
         'icon' => 'text-red-500 dark:text-red-400',
-        'title' => 'text-red-800 dark:text-red-200',
-        'content' => 'text-red-700 dark:text-red-300'
+        'title' => 'text-neutral-900 dark:text-neutral-50',
+        'content' => 'text-neutral-600 dark:text-neutral-300'
     ],
     'warning' => [
-        'wrapper' => 'bg-yellow-50 border-yellow-200 dark:bg-yellow-950/20 dark:border-yellow-800',
-        'icon' => 'text-yellow-500 dark:text-yellow-400',
-        'title' => 'text-yellow-800 dark:text-yellow-200',
-        'content' => 'text-yellow-700 dark:text-yellow-300'
+        'wrapper' => 'bg-white dark:bg-neutral-950 border-2 border-neutral-200 dark:border-neutral-800 shadow-sm dark:shadow-neutral-900/10 border-l-4 border-l-amber-500',
+        'icon' => 'text-amber-500 dark:text-amber-400',
+        'title' => 'text-neutral-900 dark:text-neutral-50',
+        'content' => 'text-neutral-600 dark:text-neutral-300'
     ],
     'info' => [
-        'wrapper' => 'bg-blue-50 border-blue-200 dark:bg-blue-950/20 dark:border-blue-800',
+        'wrapper' => 'bg-white dark:bg-neutral-950 border-2 border-neutral-200 dark:border-neutral-800 shadow-sm dark:shadow-neutral-900/10 border-l-4 border-l-blue-500',
         'icon' => 'text-blue-500 dark:text-blue-400',
-        'title' => 'text-blue-800 dark:text-blue-200',
-        'content' => 'text-blue-700 dark:text-blue-300'
+        'title' => 'text-neutral-900 dark:text-neutral-50',
+        'content' => 'text-neutral-600 dark:text-neutral-300'
     ]
 ];
 
