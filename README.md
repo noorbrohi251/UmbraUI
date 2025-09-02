@@ -54,20 +54,16 @@ libraries like shadcn/ui, Tailwind UI, and Chakra UI.
 | Accordion | ✅ Ready | Collapsible content sections       |
 | Modal     | ✅ Ready | Dialog/popup overlay               |
 | Card      | ✅ Ready | Universal card with image support  |
+| Dropdown  | ✅ Ready | Context menus with nested submenus |
 
 ### Coming Next 🚀
 
-| Component | Status        | Priority |
-|-----------|---------------|----------|
-| Toast     | 🚧 Developing | High     |
-| Dropdown  | ⏳ Planned     | Medium   |
-
-**Why These Components?**
-
-- **High Usage**: Based on analysis of popular UI libraries and real-world applications
-- **Essential Patterns**: Covers 80% of common UI needs
-- **Accessibility First**: All components built with ARIA compliance
-- **Framework Agnostic**: Works with any Laravel project
+| Component | Status        | Priority | Target |
+|-----------|---------------|----------|--------|
+| Toast     | 🚧 Developing | High     | V0.2   |
+| Tooltip   | ⏳ Planned     | High     | V0.2   |
+| Table     | ⏳ Planned     | High     | V0.2   |
+| Spinner   | ⏳ Planned     | Medium   | V0.2   |
 
 ## Installation
 
