@@ -35,30 +35,30 @@ class UmbraUIServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->app->singleton('umbra-toast', function ($app) {
-            return new Toast();
+            return new Toast;
         });
 
         $this->app->singleton('umbra-toast-renderer', function ($app) {
-            return new ToastRenderer();
+            return new ToastRenderer;
         });
     }
 
     public function boot(): void
     {
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'umbra-ui');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'umbra-ui');
 
         foreach ($this->components as $component) {
             $this->publishes([
-                __DIR__ . "/../resources/views/components/{$component}" => resource_path("views/components/{$component}"),
+                __DIR__."/../resources/views/components/{$component}" => resource_path("views/components/{$component}"),
             ], $component);
         }
 
         $this->publishes([
-            __DIR__ . '/../resources/views' => resource_path('views/vendor/umbra-ui'),
+            __DIR__.'/../resources/views' => resource_path('views/vendor/umbra-ui'),
         ], 'umbra-ui-views');
 
         $this->publishes([
-            __DIR__ . '/../resources/js' => public_path('vendor/umbra-ui/js'),
+            __DIR__.'/../resources/js' => public_path('vendor/umbra-ui/js'),
         ], 'umbra-ui-assets');
 
         Blade::directive('umbraToasts', function () {
