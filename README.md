@@ -68,7 +68,6 @@ libraries like shadcn/ui, Tailwind UI, and Chakra UI.
 |-----------|---------------|----------|--------|
 | Toast     | 🚧 Developing | High     | V0.2   |
 | Tooltip   | ⏳ Planned     | High     | V0.2   |
-| Spinner   | ⏳ Planned     | Medium   | V0.2   |
 
 ## Installation
 
