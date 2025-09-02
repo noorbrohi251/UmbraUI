@@ -56,13 +56,18 @@ libraries like shadcn/ui, Tailwind UI, and Chakra UI.
 | Card      | ✅ Ready | Universal card with image support  |
 | Dropdown  | ✅ Ready | Context menus with nested submenus |
 
+### Data Display ✅
+
+| Component | Status  | Description                                    |
+|-----------|---------|------------------------------------------------|
+| Table     | ✅ Ready | Data tables with sorting and selection support |
+
 ### Coming Next 🚀
 
 | Component | Status        | Priority | Target |
 |-----------|---------------|----------|--------|
 | Toast     | 🚧 Developing | High     | V0.2   |
 | Tooltip   | ⏳ Planned     | High     | V0.2   |
-| Table     | ⏳ Planned     | High     | V0.2   |
 | Spinner   | ⏳ Planned     | Medium   | V0.2   |
 
 ## Installation
@@ -183,6 +188,60 @@ composer require ihxnnxs/umbra-ui
 ```blade
 <x-link href="https://example.com">External Link</x-link>
 <x-link href="/dashboard" class="text-blue-600">Custom Styled Link</x-link>
+```
+
+### Tables
+
+```blade
+{{-- Basic Table --}}
+<x-umbra-ui::table>
+    <x-umbra-ui::table.head>
+        <x-umbra-ui::table.row>
+            <x-umbra-ui::table.th>Name</x-umbra-ui::table.th>
+            <x-umbra-ui::table.th>Email</x-umbra-ui::table.th>
+            <x-umbra-ui::table.th align="right">Actions</x-umbra-ui::table.th>
+        </x-umbra-ui::table.row>
+    </x-umbra-ui::table.head>
+    
+    <x-umbra-ui::table.body>
+        <x-umbra-ui::table.row>
+            <x-umbra-ui::table.td>John Doe</x-umbra-ui::table.td>
+            <x-umbra-ui::table.td>john@example.com</x-umbra-ui::table.td>
+            <x-umbra-ui::table.td align="right">
+                <x-button class="text-xs">Edit</x-button>
+            </x-umbra-ui::table.td>
+        </x-umbra-ui::table.row>
+        
+        <x-umbra-ui::table.row selected="true">
+            <x-umbra-ui::table.td>Jane Smith</x-umbra-ui::table.td>
+            <x-umbra-ui::table.td>jane@example.com</x-umbra-ui::table.td>
+            <x-umbra-ui::table.td align="right">
+                <x-button class="text-xs">Edit</x-button>
+            </x-umbra-ui::table.td>
+        </x-umbra-ui::table.row>
+    </x-umbra-ui::table.body>
+</x-umbra-ui::table>
+
+{{-- Empty State Table --}}
+<x-umbra-ui::table>
+    <x-umbra-ui::table.head>
+        <x-umbra-ui::table.row>
+            <x-umbra-ui::table.th>Orders</x-umbra-ui::table.th>
+            <x-umbra-ui::table.th>Customer</x-umbra-ui::table.th>
+            <x-umbra-ui::table.th align="right">Total</x-umbra-ui::table.th>
+        </x-umbra-ui::table.row>
+    </x-umbra-ui::table.head>
+    
+    <x-umbra-ui::table.body>
+        <x-umbra-ui::table.empty colspan="3">
+            <x-slot name="title">No orders found</x-slot>
+            You haven't received any orders yet.
+            <x-slot name="action">
+                <x-button class="text-sm">Create Order</x-button>
+            </x-slot>
+        </x-umbra-ui::table.empty>
+    </x-umbra-ui::table.body>
+</x-umbra-ui::table>
 ```
 
 ## Testing
