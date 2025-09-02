@@ -1,6 +1,6 @@
 <div {{ $attributes->merge(['class' => 'space-y-2 w-full']) }}>
     @if(isset($label))
-    <x-label>{{ $label }}</x-label>
+    <x-umbra-ui::label>{{ $label }}</x-umbra-ui::label>
     @endif
     
     {{ $slot }}

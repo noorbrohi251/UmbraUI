@@ -3,9 +3,9 @@
         <h2 class="text-lg font-semibold text-neutral-900 dark:text-neutral-50">
             {{ $title ?? 'Modal Title' }}
         </h2>
-        <x-button onclick="this.closest('dialog').close()" class="!p-2 !min-w-0">
+        <x-umbra-ui::button onclick="this.closest('dialog').close()" class="!p-2 !min-w-0">
             ×
-        </x-button>
+        </x-umbra-ui::button>
     </div>
     <div class="text-neutral-600 dark:text-neutral-300">
         {{ $slot }}

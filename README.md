@@ -76,6 +76,16 @@ You can install the package via composer:
 composer require ihxnnxs/umbra-ui
 ```
 
+### Publishing Assets
+
+To use JavaScript toast notifications, you need to publish the assets:
+
+```bash
+php artisan vendor:publish --tag=umbra-ui-assets
+```
+
+This will publish the JavaScript files to `public/vendor/umbra-ui/js/`.
+
 ## Usage
 
 ### Basic Components
