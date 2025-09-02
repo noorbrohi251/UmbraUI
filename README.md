@@ -62,12 +62,11 @@ libraries like shadcn/ui, Tailwind UI, and Chakra UI.
 |-----------|---------|------------------------------------------------|
 | Table     | ✅ Ready | Data tables with sorting and selection support |
 
-### Coming Next 🚀
+### Notifications ✅
 
-| Component | Status        | Priority | Target |
-|-----------|---------------|----------|--------|
-| Toast     | 🚧 Developing | High     | V0.2   |
-| Tooltip   | ⏳ Planned     | High     | V0.2   |
+| Component | Status  | Description                 |
+|-----------|---------|-----------------------------|
+| Toast     | ✅ Ready | Elegant notification system |
 
 ## Installation
 
@@ -153,6 +152,94 @@ composer require ihxnnxs/umbra-ui
 
 <x-slider min="0" max="100" value="50" />
 <x-date-picker value="2025-01-15" />
+```
+
+### Toast Notifications
+
+Simple, elegant toast notifications for Laravel applications.
+
+#### Installation
+
+**For JavaScript toasts only:**
+
+```html
+
+<script src="{{ asset('vendor/umbra-ui/js/toast.js') }}"></script>
+```
+
+**For server-side toasts (redirect()->with()):**
+
+```blade
+<x-umbra-ui::toast-container />
+```
+
+**For both:**
+
+```html
+
+<x-umbra-ui::toast-container/>
+<script src="{{ asset('vendor/umbra-ui/js/toast.js') }}"></script>
+```
+
+#### Usage
+
+**Server-side (PHP):**
+
+```php
+// Using redirect()->with()
+return redirect()->back()
+    ->with('success', 'User created successfully!');
+    // Supports: success, error, warning, info
+
+// Using Toast Facade
+use Ihxnnxs\UmbraUI\Facades\Toast;
+
+Toast::success('User created successfully!', 'Success Title');
+Toast::error('Something went wrong!');
+Toast::warning('Please review your data');
+Toast::info('New updates available');
+```
+
+**Client-side (JavaScript):**
+
+```html
+<!-- Data attributes on buttons -->
+<button
+    data-toast-trigger
+    data-toast-type="success"
+    data-toast-message="Operation completed!"
+    data-toast-title="Success"
+>
+    Show Toast
+</button>
+
+<script>
+    // Direct JavaScript calls
+    umbraToast.success('Success message!', 'Title');
+    umbraToast.error('Error message!');
+    umbraToast.warning('Warning message!');
+    umbraToast.info('Info message!');
+</script>
+```
+
+#### Configuration Options
+
+**Data Attributes:**
+
+- `data-toast-type`: success, error, warning, info, default
+- `data-toast-message`: Toast message text
+- `data-toast-title`: Optional title
+- `data-toast-position`: top-left, top-right, top-center, bottom-left, bottom-right, bottom-center
+- `data-toast-duration`: Milliseconds (default: 5000, 0 = no auto-dismiss)
+
+**JavaScript Options:**
+
+```javascript
+umbraToast.show('Message', 'success', 'Title', {
+    position: 'top-right',
+    duration: 5000,
+    dismissible: true
+});
 ```
 
 ### Cards
